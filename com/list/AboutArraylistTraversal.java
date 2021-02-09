@@ -9,6 +9,7 @@ package com.list;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Spliterator;
 import java.util.Enumeration;
 import java.util.Collections;
 
@@ -30,7 +31,7 @@ public class AboutArraylistTraversal {
 			      /* For Loop for iterating ArrayList */
 			      System.out.println("For Loop");
 			      for (int counter = 0; counter < list.size(); counter++) { 		      
-			          System.out.println(list.get(counter)); 		
+		          System.out.println(list.get(counter)); 		
 			      }   		
 
 			      /* Advanced For Loop*/ 		
@@ -54,6 +55,14 @@ public class AboutArraylistTraversal {
 			      while (it.hasNext()) {
 			         System.out.println(it.next());
 			      }
+			      
+			      
+			         // Getting Spliterator
+			        	Spliterator<Object> namesSpliterator = list.spliterator();
+			        	
+			        	// Traversing elements
+			        	System.out.println("split iterator");
+			        	namesSpliterator.forEachRemaining(System.out::println);	
 			      
 			   // Get the Enumeration object
 			      Enumeration<Object> e = Collections.enumeration(list);
