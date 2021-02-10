@@ -5,6 +5,7 @@ package com.sets;
 import java.util.Collections;
 import java.util.Enumeration;
 import java.util.LinkedHashSet;
+import java.util.Spliterator;
 import java.util.Iterator;
 public class AboutLinkedHashsetTraversal {
 
@@ -51,5 +52,10 @@ public class AboutLinkedHashsetTraversal {
 	      //using stream forEach
 	      System.out.println("using stream forEach");
 	      h1.stream().forEach(student -> System.out.println(student));
+	      
+	      Spliterator<Object> s=h1.spliterator();
+	      System.out.println("By using split iterator");
+	      s.forEachRemaining(l->System.out.println(l));
+	      
 	}
 }

@@ -3,6 +3,7 @@ package com.sets;
 import java.util.Collections;
 import java.util.Enumeration;
 import java.util.Iterator;
+import java.util.Spliterator;
 import java.util.TreeSet;
 
 public class AboutTreesetTraversal {
@@ -47,6 +48,10 @@ public class AboutTreesetTraversal {
 	      //using stream forEach
 	      System.out.println("using stream forEach");
 	      set.stream().forEach(student -> System.out.println(student));
+	      
+	      Spliterator<String> s=set.spliterator();
+	      System.out.println("By using split iterator");
+	      s.forEachRemaining(t->System.out.println(t));
         
 	}
 }

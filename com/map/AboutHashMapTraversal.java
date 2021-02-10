@@ -1,7 +1,8 @@
 package com.map;
 
 import java.util.HashMap;
-import java.util.Map; 
+import java.util.Map;
+import java.util.Spliterator;
 import java.util.Iterator;
 public class AboutHashMapTraversal {
 	public static void main(String[] args) {
@@ -47,5 +48,6 @@ public class AboutHashMapTraversal {
         System.out.println("forEach");
         m.forEach((k,v) -> System.out.println("Key = " + k + ", Value = " + v)); 
 	
+        
 	}
 }

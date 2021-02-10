@@ -1,6 +1,7 @@
 package com.list;
 
 import java.util.LinkedList;
+import java.util.Spliterator;
 import java.util.Collections;
 import java.util.Enumeration;
 import java.util.Iterator;
@@ -61,5 +62,14 @@ public static void main(String[] args) {
 			      //using stream forEach
 			      System.out.println("using stream forEach");
 			      list.stream().forEach(student -> System.out.println(student));
+			      
+			   // using spliterator() method 
+			        Spliterator<Object> details = list.spliterator(); 
+			  
+			        // print result from Spliterator 
+			        System.out.println("By using split iterator:"); 
+			  
+			        // forEachRemaining method of Spliterator 
+			        details.forEachRemaining((n) -> System.out.println( n)); 
 }
 }

@@ -4,6 +4,7 @@ import java.util.Collections;
 import java.util.Enumeration;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Spliterator;
 
 public class AboutHashsetTraversal {
 	public static void main(String[] args) {
@@ -48,6 +49,9 @@ public class AboutHashsetTraversal {
 	      //using stream forEach
 	      System.out.println("using stream forEach");
 	      h1.stream().forEach(student -> System.out.println(student));
-
+	      
+	      Spliterator<Object> s=h1.spliterator();
+	      System.out.println("by using spliterator");
+	      s.forEachRemaining(n->System.out.println(n));
 	}
 }
