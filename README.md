@@ -18,13 +18,17 @@
 -Inner class is a part of nested class. Non-static nested classes are known as inner classes.
 ## Types of Nested classes
 -There are two types of nested classes non-static and static nested classes.The non-static nested classes are also known as inner classes.
-1.Non-static nested class (inner class)
-	i.Member inner class
-	ii.Anonymous inner class
-	iii.Local inner class
-2.Static nested class
+--.Non-static nested class (inner class)
+--Member inner class
+--Anonymous inner class
+--Local inner class
+--Static nested class
 
-i.Member Inner Class:A class created within class and outside method.
-ii.Anonymous InnerClass:A class created for implementing interface or extending class. Its name is decided by the java compiler.
-iii.Local Inner Class:A class created within method.
-2.Static Nested Class:A static class created within class.
+i.Member Inner Class:
+-A class created within class and outside method.
+ii.Anonymous InnerClass:
+-A class created for implementing interface or extending class. Its name is decided by the java compiler.
+iii.Local Inner Class:
+-A class created within method.
+2.Static Nested Class:
+-A static class created within class.
