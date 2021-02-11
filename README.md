@@ -23,7 +23,7 @@
 - Member inner class
 - Anonymous inner class
 - Local inner class
-*2.Static nested class
+2.Static nested class
 
 i.Member Inner Class:
 - A class created within class and outside method.
@@ -32,4 +32,4 @@ ii.Anonymous InnerClass:
 iii.Local Inner Class:
 - A class created within method.
 2.Static Nested Class:
-- A static class created within class.
+-A static class created within class.
