@@ -13,16 +13,16 @@
 -But you have static innerClass then it will not allow the non-static variables.
 -The innerclass object is depends on outerclass
 -For example: Building is outer class
-		#Apartment is innerClass(To access apartment you should first enter into building)
+		-partment is innerClass(To access apartment you should first enter into building)
 -So,If you want to access any innerClass methods first you should access the outerclass and based on outerclass reference you will access the innerClass  
 -Inner class is a part of nested class. Non-static nested classes are known as inner classes.
 ## Types of Nested classes
 -There are two types of nested classes non-static and static nested classes.The non-static nested classes are also known as inner classes.
---.Non-static nested class (inner class)
---Member inner class
---Anonymous inner class
---Local inner class
---Static nested class
+-.Non-static nested class (inner class)
+	-Member inner class
+	-Anonymous inner class
+	-Local inner class
+	-Static nested class
 
 i.Member Inner Class:
 -A class created within class and outside method.
