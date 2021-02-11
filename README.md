@@ -28,7 +28,8 @@
 i.Member Inner Class:
 - A class created within class and outside method.
 ii.Anonymous InnerClass:
-- A class created for implementing interface or extending class. Its name is decided by the java compiler.
+- A class created for implementing interface or extending class.
+- Its name is decided by the java compiler.
 iii.Local Inner Class:
 - A class created within method.
 2.Static Nested Class:
