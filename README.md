@@ -162,6 +162,33 @@ without comparable and comparator interface :
 -	Array.sort method from java.util.Arrays class can be used to sort primitive type arrays.
 -	collections.sort method from java.util.Collections class can be used to sort Object Arrays.
 
+### Functional programming:
+- Upto java7  java is object oriented programming it means it supports only oops features.
+- From java8 to we are allowed to develop functional programming style of programs also..means there is no change in syntax but it is additional to add for oops
+- By using functional programming we can pass a function as argument to a method
+- Upto java 7 we can pass only primitive value as argument or 1 class object as argument but you cannot pass function as argument to a method but from java8 it is possible
+
+- COLLECTIONS:
+- If we want to represent group of objects as single entity then we should go for collections
+### STREAMS:
+- stream api is used to process collections of objects.
+- A stream is a sequence of objects that supports various methods which can be pipelined to produce the desired result
+- A stream is not a data structure instead it takes input from the collections,Arrays or I/O channels.
+- Streams don't change the original dtat structure instead it takes input from the collections,Arrays or I/o channels.
+### why do we need stream
+- Functinal programming:It means if i had a functional interface then represent it with lambda expression
+- Code reduce:so,if we write in lambda expression then the length of code is reduced.
+- Bulk opeartions:As compared to traditional approach stream will provide better approach
+- If we want  to process the object from the collection.
+- The iostreams are different from the collection streams 
+- collections streams are used to process the stream of objects but in iostreams are used to process the data.
+- if you want to get the stream ,stream method is used i.e., 
+	Stream s=c.stream();
+	Streams are present in java.util.stream pakg;
+- Stream is an interface
+- filter method():To filter elements based on conditions
+- map method():for every object we want to a new object after applying something and generate a new object
+
 # Inner Classes:
 - In Java, just like methods, variables of a class too can have another class as its member. 
 - Writing a class within another is allowed in Java. 
