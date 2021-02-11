@@ -1,11 +1,12 @@
 # CollectionFramework
 
-## Inner Classes:
-#In Java, just like methods, variables of a class too can have another class as its member. 
-#Writing a class within another is allowed in Java. 
-#The class written within is called the nested class, and the class that holds the inner class is called the outer class.
-#Inner classes are a security mechanism in Java.
-# We know a class cannot be associated with the access modifier private, but if we have the class as a member of other class, then the inner class can be made private. And this is also used to access the private members of a class.
+# Inner Classes:
+In Java, just like methods, variables of a class too can have another class as its member. 
+# Writing a class within another is allowed in Java. 
+# The class written within is called the nested class, and the class that holds the inner class is called the outer class.
+# Inner classes are a security mechanism in Java.
+# We know a class cannot be associated with the access modifier private, but if we have the class as a member of other class, then the inner class can be made private.
+# And this is also used to access the private members of a class.
 #once you declare an inner class private, it cannot be accessed from an object outside the class.
 #If the innerClass is static then we can write main method but if it is non- static we cannot access.
 #If the innerclass is non-static it can access both static or non-static variables in outer class
