@@ -231,10 +231,10 @@ iii. Local Inner Class:
 - It is a way of logically grouping classes that are only used in one place: If a class is useful to only one other class, then it is logical to embed it in that class and keep the two together. Nesting such "helper classes" makes their package more streamlined.
 - It increases encapsulation: Consider two top-level classes, A and B, where B needs access to members of A that would otherwise be declared private. By hiding class B within class A, A's members can be declared private and B can access them. In addition, B itself can be hidden from the outside world.
 - It can lead to more readable and maintainable code: Nesting small classes within top-level classes places the code closer to where it is used.
-**1. Member InnerClass:**
+- **1. Member InnerClass:**
 - These MemberInner class is also called RegularMethodInner class
 - A non-static class that is created inside a class but outside a method is called member inner class.
-**2. LocalInner Class**
+- **2. LocalInner Class**
 - A class i.e. created inside a method is called local inner class in java. If you want to invoke the methods of local inner class, you must instantiate this class inside the method.
 - Rules of Local Inner Class:
 - The scope of local inner class is restricted to the block they are defined in.
@@ -242,13 +242,13 @@ iii. Local Inner Class:
 ⦁	Till JDK 7,Local inner class can access only final local variable of the enclosing block. However From JDK 8, it is possible to access the non-final local variable of enclosing block in local inner class.
 ⦁	A local class has access to the members of its enclosing class.
 ⦁	Local inner classes can extend an abstract class or can also implement an interface.
-**3.AnonymousInner Class:**
+- **3.AnonymousInner Class:**
 - It is an inner class without a name and for which only a single object is created. An anonymous inner class can be useful when making an instance of an object with certain “extras” such as overloading methods of a class or interface, without having to actually subclass a class.
 - Anonymous inner classes are useful in writing implementation classes for listener interfaces in graphics programming.
 - Anonymous inner class are mainly created in two ways:
 i. Class (may be abstract or concrete)
 ii. Interface
-**4. Static nested class**
+- **4. Static nested class**
 - A static class i.e. created inside a class is called static nested class in java. It cannot access non-static data members and methods. It can be accessed by outer class name.
 - It can access static data members of outer class including private.
 - Static nested class cannot access non-static (instance) data member or method.
