@@ -33,4 +33,4 @@ ii. Anonymous InnerClass:
 iii. Local Inner Class:
 - A class created within method.
 2. Static Nested Class:
--A static class created within class.
+- A static class created within class.
