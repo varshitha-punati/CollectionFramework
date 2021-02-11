@@ -1,4 +1,166 @@
 # CollectionFramework
+### what is collection?
+- Group of Objects is a collection
+- For example:
+- We have multiple students in a class student1,student2,student3 these all together are called as collection of students
+- So,Collection is a single entity representing multiple Objects
+### What is collection Framework?
+- In java, to represent the group of objects in  to a single Entity we need certain number of classes and Interfaces.
+- So,collectionFramework defines that  different types interfaces and classes by which  we can represent  the group of Objects into a collection
+### Why do we need Collection?
+- suppose I want to store 100 elements.
+- so,first I used variable to store the elements
+	int a=1;
+	int b=2;
+	---------100;
+- It is very typical for storing 100 elements using variables
+-	so,I  used array to store the elements
+-	int arr[]=new size[5];
+-	So,By using array I used to store the elements
+-	But In arrays there are some disadvantages of Arrays
+-	In object array problem is limited size i.e
+	1. Fixed in size(are not growable in nature)
+	2. Suppose the size is 5 if i used only 3 memory Location then wastage of Memory.
+	3. They will not use any underlying datastructure.so,it cannot support any readymade 	methods..means i want to sort or search an element there will be no predefined 	methods
+-	So to overcome these problems we use collectionFramework
+* Advantages of collection types:
+1. Growable in nature
+2. Homogeneous dataelements and Hetrogeneous element
+3. Implemented by using underlying datastructure.
+- eg:if I created an arraylist we need not to write the logic for sort serach etc.. there are readymade methods available like sort,search
+### what are interfaces and classes available in collection framework?
+## collection interface:
+-	It is root interface 
+-	In collection Interface is used to represent group of objects as single entity and which contains common methods which are required for other collections.
+### what is Collections?
+-	Collections in java is a  predefined class which is from java.util package
+-	Collections contains some methods those methods are used to perform several opeartions on collection Objects
+-	Collection interface contains child Interface like list interface,Set interface and Queue inteface.
+### List Interface:
+-	List is a child interface on collection Interface.
+-	Store group of elements in sorted Order
+-	Whatever i entered in the collection same order should maintain i.e. , Insertion Order should be mainted.
+-	duplicates also should allow In thoses cases we go for List
+* List classes:
+- list is implemented by these classes.
+1. ArrayList
+2. LinkedList
+3. Vector--legacy classes
+### Set Interface :
+- Set is a child interface on collection Interface.
+- insertion order not preserved.
+- duplicates not allowed.
+* Set classes:
+- set is implemented by these classes.
+1. Hashset
+2. LinkedHashset
+3. TreeSet
+
+### Queue:(Extends Collection Interface)
+- Queue is child  interface of Collection Interface.
+- Suppose we have different list of Emails eg having 1000 emails if i want to send the the mail to this 1000 emails we can send the mail to all at sametime..first it will send to first guy and after 2nd,3rd like that..
+* Queue classes:
+-	Queue is implemnted by these classes.
+1. PriorityQueue
+
+### Map interface:
+- Map does not extends Collection Interface
+- A map contains values on the basis of key, i.e. key and value pair. Each key and value pair is known as an entry. A Map contains unique keys.
+-	A Map is useful if you have to search, update or delete elements on the basis of a key.
+* Map classes:
+- Map is implemented by these classes.
+1. HashMap
+2. LinkedHashMap
+3. TreeMap
+* Iterators:
+- Iterators are used in Collection framework in Java to retrieve elements one by one. There are three iterators.
+### Enumeration:
+- It is a interface used to get elements of legacy collections(Vector, Hashtable). Enumeration is the first iterator present from JDK 1.0, rests are included in JDK 1.2 with more functionality.
+- Here "v" is an Vector class object. e is of
+- type Enumeration interface and refers to "v"
+- Enumeration e = v.elements();
+- There are two methods in Enumeration interface namely :
+1. Tests if this enumeration contains more elements
+public boolean hasMoreElements();
+ 2. Returns the next element of this enumeration 
+// It throws NoSuchElementException
+// if no more element present
+public Object nextElement();
+- Limitations of Enumeration :
+- Enumeration is for legacy classes(Vector, Hashtable) only. Hence it is not a universal iterator.
+-	Remove operations can’t be performed using Enumeration.
+- Only forward direction iterating is possible.
+### Iterator:
+- It is a universal iterator as we can apply it to any Collection object. By using Iterator, we can perform both read and remove operations. 
+- It is improved version of Enumeration with additional functionality of remove-ability of a element.
+-	Iterator must be used whenever we want to enumerate elements in all Collection framework implemented interfaces like Set, List, Queue, Deque and also in all implemented classes of Map interface. Iterator is the only cursor available for entire collection framework.
+-	Iterator object can be created by calling iterator() method present in Collection interface.
+-	Iterator object can be created by calling iterator() method present in Collection interface.
+
+- Here "c" is any Collection object. itr is of
+- type Iterator interface and refers to "c"
+- Iterator itr = c.iterator();
+- Iterator interface defines three methods:
+
+- Returns true if the iteration has more elements
+public boolean hasNext();
+
+// Returns the next element in the iteration
+// It throws NoSuchElementException if no more 
+// element present
+public Object next();
+
+// Remove the next element in the iteration
+// This method can be called only once per call
+// to next()
+public void remove();
+
+### Limitations of Iterator :
+
+- Only forward direction iterating is possible.
+-	Replacement and addition of new element is not supported by Iterator.
+- Java ListIterator:
+-	Like Iterator, ListIterator is a Java Iterator, which is used to iterate elements one-by-one from a List implemented object.
+-	It is available since Java 1.2.
+-	It extends Iterator interface.
+-	It is useful only for List implemented classes.
+-	Unlike Iterator, It supports all four operations: CRUD (CREATE, READ, UPDATE and DELETE).
+-	Unlike Iterator, It supports both Forward Direction and Backward Direction iterations.
+-	It is a Bi-directional Iterator.
+- What is CRUD operations in Collection API?
+- CREATE: Adding new elements to Collection object.
+- READ: Retrieving elements from Collection object.
+- UPDATE: Updating or setting existing elements in Collection object.
+- DELETE: Removing elements from Collection object.
+### Comparator Interface:
+-	Java Comparator interface is used to order the objects of a user-defined class.
+-	This interface is found in java.util package and contains 2 methods compare(Object obj1,Object obj2) and equals(Object element).
+-	It provides multiple sorting sequences, i.e., you can sort the elements on the basis of any data member, for example, rollno, name, age or anything else.
+- public int compare(Object obj1, Object obj2):
+-	It compares the first object with the second object.
+- public boolean equals(Object obj):	
+-	It is used to compare the current object with the specified object.
+- public boolean equals(Object obj):	
+-	It is used to compare the current object with the specified object.
+### Comparable interface:
+-	Java Comparable interface is used to order the objects of the user-defined class. 
+-	This interface is found in java.lang package and contains only one method named compareTo(Object). 
+-	It provides a single sorting sequence only, i.e., you can sort the elements on the basis of single data member only. 
+- For example, it may be rollno, name, age or anything else.
+- compareTo(Object obj) method:
+- public int compareTo(Object obj): It is used to compare the current object with the specified object. It returns
+- positive integer, if the current object is greater than the specified object.
+- negative integer, if the current object is less than the specified object.
+- zero, if the current object is equal to the specified object.
+### Difference between Comparator and Comparable Interface
+-	comparable and comparator both are interfaces provide way of sorting to group of object or Collection.
+-	comparable interface is present in java.lang package.
+-	comparator interface is present in java.util package.
+-	Comparable interface can be used to achieve single way of sorting like ascending or descending sorting order for numerical collection or alphabetical for string object collection
+-	comparator interface  can be used to acheive multiple way of sorting.
+without comparable and comparator interface :
+-	Array.sort method from java.util.Arrays class can be used to sort primitive type arrays.
+-	collections.sort method from java.util.Collections class can be used to sort Object Arrays.
 
 # Inner Classes:
 - In Java, just like methods, variables of a class too can have another class as its member. 
