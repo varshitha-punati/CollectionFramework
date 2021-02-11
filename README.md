@@ -23,14 +23,14 @@
 - Member inner class
 - Anonymous inner class
 - Local inner class
-2.Static nested class
+2. Static nested class
 
-i.Member Inner Class:
+i. Member Inner Class:
 - A class created within class and outside method.
-ii.Anonymous InnerClass:
+ii. Anonymous InnerClass:
 - A class created for implementing interface or extending class.
 - Its name is decided by the java compiler.
-iii.Local Inner Class:
+iii. Local Inner Class:
 - A class created within method.
-2.Static Nested Class:
+2. Static Nested Class:
 -A static class created within class.
