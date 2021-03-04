@@ -43,7 +43,6 @@ public static void main(String[] args) {
 	//creating another hashSet
 	HashSet<Object> h2=new HashSet<Object>();
 	
-	
 	//adding values to the HashSet
 	h2.add(new Student(5,"manisha","manishakunkn@gmail.com"));
 	h2.add(new Student(6,"sravani","sravanipemmisani@gmail.com"));
@@ -72,6 +71,7 @@ public static void main(String[] args) {
 
 	 */
 	h2.clone();
+	
 	h1.remove(h2);
 	System.out.println(h1);
 	

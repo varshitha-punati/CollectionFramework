@@ -17,10 +17,7 @@ public class AboutHashsetTraversal {
 		h1.add(new Student(2,"akhila","akhilacherukuri@gmail.com"));
 		h1.add(new Student(3,"koti","kotioruganti@gmail.com"));
 		h1.add(new Student(4,"sai","sai@gmail.com"));
-		
-		
-		
-
+		 
 	     
 	      /* Advanced For Loop*/ 		
 	      System.out.println("Advanced For Loop"); 		

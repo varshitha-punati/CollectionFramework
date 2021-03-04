@@ -1,4 +1,5 @@
-/*java LinkedList class can contain duplicate elements.
+/*
+ * java LinkedList class can contain duplicate elements.
 Java LinkedList class maintains insertion order.
 Java LinkedList class is non synchronized.
 In Java LinkedList class, manipulation is fast because no shifting needs to occur.*/
@@ -6,7 +7,6 @@ In Java LinkedList class, manipulation is fast because no shifting needs to occu
 package com.list;
 
 import java.util.LinkedList;
-
 public class AboutLinkedList {
 	public static void main(String[] args) {
 		
@@ -31,7 +31,6 @@ public class AboutLinkedList {
 		list1.add(new Student(578,"sravya","sravyapunati@gmail.com"));
 		list1.add(new Student(579,"kavya","kavyapunati@gmail.com"));
 		
-
 		//printing size of the LinkedList
 		System.out.println("size of the list1 using size method:"+list1.size());
 		

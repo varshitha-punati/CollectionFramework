@@ -17,8 +17,6 @@ public class AboutHashsetCases {
 	    //printing the values to hashSet
 	    System.out.println(cars);
 	    
-	  
-
 	    /*The contains(Object element) of java.util.Collection interface is used 
 	     		to check whether the element ‘element’ exists in this collection.
 	     *  This method returns a boolean value depicting the presence of the element. 

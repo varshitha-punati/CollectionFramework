@@ -58,7 +58,7 @@ public static void main(String[] args) {
 			      while(e.hasMoreElements())
 			      System.out.println(e.nextElement());
 			      
-			      
+			     
 			      //using stream forEach
 			      System.out.println("using stream forEach");
 			      list.stream().forEach(student -> System.out.println(student));

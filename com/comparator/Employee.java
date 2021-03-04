@@ -8,7 +8,6 @@ public class Employee {
 		this.empName=name;
 		this.empSalary=sal;
 	}
-
 	@Override
 	public String toString() {
 		return "Employee [empSalary=" + empSalary + ", empName=" + empName + "]";

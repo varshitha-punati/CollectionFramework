@@ -1,5 +1,4 @@
-/*collections:
- * 
+/* 
  * Collection is a interface present in java.util.package.
  *  It is used to represent a group of individual objects as a single unit. 
  *   The collection is considered as the root interface of the collection framework. 

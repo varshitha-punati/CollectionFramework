@@ -15,7 +15,7 @@ public class AboutLinkedlistMethods {
 		l1.add(17);
 		l1.add(12);
 		l1.add(21);
-		
+	
 		System.out.print("Before sorting:");
 		System.out.println(l1);
 		Collections.sort(l1);

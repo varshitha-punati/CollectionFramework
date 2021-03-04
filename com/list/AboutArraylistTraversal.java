@@ -25,8 +25,7 @@ public class AboutArraylistTraversal {
 				list.add(new Student(573,"lakshmi","lakshmipunati@gmail.com"));
 				list.add(new Student(575,"sailu","sailupunati@gmail.com"));
 				
-				
-				
+				System.out.println();
 
 			      /* For Loop for iterating ArrayList */
 			      System.out.println("For Loop");
@@ -66,7 +65,7 @@ public class AboutArraylistTraversal {
 			      
 			   // Get the Enumeration object
 			      Enumeration<Object> e = Collections.enumeration(list);
-			 
+			
 			      // Enumerate through the ArrayList elements
 			      System.out.println("ArrayList elements using enumeration: ");
 			      while(e.hasMoreElements())
@@ -76,5 +75,10 @@ public class AboutArraylistTraversal {
 			      //using stream forEach
 			      System.out.println("using stream forEach");
 			      list.stream().forEach(student -> System.out.println(student));
+	}
+
+	private static void getArrayListCapacity(ArrayList<Object> list) {
+		// TODO Auto-generated method stub
+		
 	}
 }

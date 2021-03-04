@@ -24,6 +24,8 @@ public class AboutArrayList {
 		  // Creating empty ArrayList
 		ArrayList<Object> list=new ArrayList<Object>();
 		
+		System.out.println(list.size());
+		
 		//adding values to the ArrayList 
 //		The add method is used to add elements in that list
 		list.add(new Student(571,"varshi","varshithapunati@gmail.com"));
@@ -40,7 +42,7 @@ public class AboutArrayList {
 	
 		 // Creating another empty ArrayList
 		ArrayList<Object> list1=new ArrayList<Object>(20);
-		
+		System.out.println("lis1 intial size"+list1.size());
 		
 		//adding values to the ArrayList 
 		list1.add(new Student(576,"dharani","dharanipunati@gmail.com"));
@@ -57,8 +59,9 @@ public class AboutArrayList {
 //		The following example creates an ArrayList with a capacity of 20 elements. 
 //		Four elements are then added to the ArrayList and the ArrayList is trimmed accordingly.
 		list1.trimToSize();
-		System.out.println(list1.size());
-		
+		System.out.println("trim to size list1:"+list1.size());
+		list1.add(new Student(578,"sravya","sravyapunati@gmail.com"));
+		System.out.println("trim to size list1:"+list1.size());	
 		//Increase capacity to 10
 /*	
  * Consider a scenario when there is a need to add huge number of elements to an already full ArrayList,

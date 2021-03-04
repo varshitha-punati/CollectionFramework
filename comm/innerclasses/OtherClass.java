@@ -33,5 +33,6 @@ void display() {
 	System.out.println("display method in outer class");
 }
 }
+
 }
 

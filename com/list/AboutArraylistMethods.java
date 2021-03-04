@@ -52,8 +52,7 @@ public class AboutArraylistMethods {
 	         // printing the unsorted ArrayList  
 	            System.out.println("Before sorting:");
 	            System.out.println(list);
-	            Collections.sort(list);
-	            
+	            Collections.sort(list);	            
 	         // printing the sorted ArrayList  
 	            System.out.print("After sorting:");
 	            System.out.println(list);

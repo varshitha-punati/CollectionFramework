@@ -19,8 +19,7 @@ public class AboutVector {
 		v.addElement(new Student(2,"b","b@gmail.com"));
 		v.addElement(new Student(3,"c","c@gmail.com"));
 		v.addElement(new Student(4,"d","d@gmail.com"));
-		v.addElement(new Student(5,"e","e@gmail.com"));
-		
+		v.addElement(new Student(5,"e","e@gmail.com"));	
 
 		//printing size of the vector
 		System.out.println("size of the vector using size method:"+v.size());

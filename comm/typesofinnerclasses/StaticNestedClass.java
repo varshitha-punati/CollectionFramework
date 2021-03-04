@@ -9,6 +9,7 @@
 package comm.typesofinnerclasses;
 
 public class StaticNestedClass {
+	int a=12;
 	private static void outerMethod() { 
 	     System.out.println("inside outerMethod"); 
 	   } 

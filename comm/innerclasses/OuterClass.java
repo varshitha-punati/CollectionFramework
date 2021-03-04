@@ -23,14 +23,14 @@ public class OuterClass {
 		OuterClass o=new OuterClass();
 		o.display();
 		
-		//creating object for inner class with innerclass
+//		//creating object for inner class with innerclass
 		InnerClass i=o.new InnerClass();
 		i.show();
 		
 		System.out.println("outer class name:"+o.getClass().getName());
 		System.out.println("inner class name:"+i.getClass().getName());
 		
-//		InnerClass in=new OuterClass().new InnerClass();
+		InnerClass in=new OuterClass().new InnerClass();
 //		in.show();
 	}
 }

@@ -18,9 +18,7 @@ public class AboutVectorTraversal {
 					list.add(new Student(572,"yashu","yashupunati@gmail.com"));
 					list.add(new Student(573,"lakshmi","lakshmipunati@gmail.com"));
 					list.add(new Student(575,"sailu","sailupunati@gmail.com"));
-					
-					
-					
+										
 
 				      /* For Loop for iterating Vector */
 				      System.out.println("For Loop");
