@@ -1,4 +1,4 @@
-package com.comparator;
+package com.collections;
 
 public class Laptop implements Comparable<Laptop>{
 	int price;

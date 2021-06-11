@@ -16,13 +16,15 @@ public class AboutHashMapTraversal {
 		m.put(2,new Student(571,"koti","kotioruganti@gmail.com"));
 		m.put(1,new Student(563,"sai","sai@gmail.com"));
 
-	
+	System.out.println("using for-each entryset");
 		// using for-each loop for iteration over Map.entrySet() 
+	
         for (Map.Entry<Integer,Object> entry : m.entrySet())  
             System.out.println("Key = " + entry.getKey() + 
                              ", Value = " + entry.getValue()); 
 		
         // using keySet() for iteration over keys 
+        System.out.println("using for each keyset");
         for (Integer student : m.keySet())  
             System.out.println("key: " + student); 
           
@@ -31,20 +33,20 @@ public class AboutHashMapTraversal {
             System.out.println("value: " + details); 
         
         
+//        System.out.println("Using Iterator");
+//        // using iterators 
+//        Iterator<Map.Entry<Integer,Object>> itr = m.entrySet().iterator(); 
+//          
+//        while(itr.hasNext()) 
+//        { 
+//             Map.Entry<Integer,Object> entry = itr.next(); 
+//             System.out.println("Key = " + entry.getKey() +  
+//                                 ", Value = " + entry.getValue()); 
+//        } 
+//        
         
-        // using iterators 
-        Iterator<Map.Entry<Integer,Object>>itr = m.entrySet().iterator(); 
-          
-        while(itr.hasNext()) 
-        { 
-             Map.Entry<Integer,Object> entry = itr.next(); 
-             System.out.println("Key = " + entry.getKey() +  
-                                 ", Value = " + entry.getValue()); 
-        } 
         
-        
-        
-     // forEach(action) method to iterate map 
+//     // forEach(action) method to iterate map 
         System.out.println("forEach");
         m.forEach((k,v) -> System.out.println("Key = " + k + ", Value = " + v)); 
 	

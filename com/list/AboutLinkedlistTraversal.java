@@ -20,6 +20,18 @@ public static void main(String[] args) {
 				list.add(new Student(575,"sailu","sailupunati@gmail.com"));
 				
 				
+				LinkedList<Object> list1=new LinkedList<>();
+				list1.add(10);
+				list1.add(20);
+				list1.add(30);
+				list1.add(40);
+				
+				Enumeration<Object> e = Collections.enumeration(list1);
+				 
+			      // Enumerate through the LinkedList elements
+			      System.out.println("LinkedList elements using enumeration: ");
+			      while(e.hasMoreElements())
+			      System.out.println(e.nextElement());
 				
 
 			      /* For Loop for iterating LinkedList */
@@ -51,7 +63,7 @@ public static void main(String[] args) {
 			      }
 			      
 			   // Get the Enumeration object
-			      Enumeration<Object> e = Collections.enumeration(list);
+			      Enumeration<Object> e1 = Collections.enumeration(list);
 			 
 			      // Enumerate through the LinkedList elements
 			      System.out.println("LinkedList elements using enumeration: ");

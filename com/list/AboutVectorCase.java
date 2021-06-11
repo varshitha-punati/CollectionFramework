@@ -7,7 +7,7 @@ public class AboutVectorCase {
 		//creating an empty Vector
 		Vector<Integer>v=new Vector<>();
 		
-		//adding values to Vector
+		//adding values to Vector 
 		v.addElement(1);
 		v.addElement(2);
 		v.addElement(3);

@@ -28,7 +28,7 @@ public class AboutCollectionMethods {
 		// TODO Auto-generated method stub
 		
 		//creating an Empty ArrayList
-		Collection<Integer> c=new ArrayList<Integer>();
+		ArrayList<Integer> c=new ArrayList<Integer>();
 		
 		//1. add():
 //		Inserting values to ArrayList using add method

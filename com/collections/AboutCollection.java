@@ -3,7 +3,14 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 public class AboutCollection {
-	public static void main(String[] args) {		     
+	int a;
+	public static void main(String[] args) {	
+		
+		AboutCollection obj=new AboutCollection();
+		System.out.println(obj.a);;
+		
+		 
+//		System.out.println(i);
 		
 		//creating an Empty ArrayList
 		Collection<Integer> c=new ArrayList<Integer>();
@@ -48,5 +55,11 @@ public class AboutCollection {
 		else {
 			System.out.println("c is not empty");
 		}
+		add();
 		    }    
+	public static void add() {
+		final int j=1;
+		AboutCollection obj1=new AboutCollection();
+		System.out.println("instance method:"+obj1.a);
+	 }
 	}

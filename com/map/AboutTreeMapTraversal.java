@@ -10,7 +10,6 @@ public static void main(String[] args) {
 	//creating an empty hashMap
 			TreeMap<Integer,Object> m=new TreeMap<Integer,Object>();
 			
-
 			m.put(5,new Student(573,"varshi","varshithapunati@gmail.com"));
 			m.put(3,new Student(561,"akhila","akhilacherukuri@gmail.com"));
 			m.put(2,new Student(571,"koti","kotioruganti@gmail.com"));

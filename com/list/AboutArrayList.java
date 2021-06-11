@@ -22,7 +22,7 @@ public class AboutArrayList {
 	public static void main(String[] args) {
 		
 		  // Creating empty ArrayList
-		ArrayList<Object> list=new ArrayList<Object>();
+		List<Object> list=new ArrayList<Object>();
 		
 		System.out.println(list.size());
 		

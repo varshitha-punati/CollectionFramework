@@ -52,8 +52,12 @@ public class AboutArraylistTraversal {
 			      
 			      Iterator it = list.iterator();
 			      while (it.hasNext()) {
+			        
+			         
 			         System.out.println(it.next());
+			        
 			      }
+			      it.remove();
 			      
 			      
 			         // Getting Spliterator
@@ -63,7 +67,7 @@ public class AboutArraylistTraversal {
 			        	System.out.println("split iterator");
 			        	namesSpliterator.forEachRemaining(System.out::println);	
 			      
-			   // Get the Enumeration object
+			   // mGet the Enumeration object
 			      Enumeration<Object> e = Collections.enumeration(list);
 			
 			      // Enumerate through the ArrayList elements
@@ -72,13 +76,10 @@ public class AboutArraylistTraversal {
 			      System.out.println(e.nextElement());
 			      
 			      
-			      //using stream forEach
-			      System.out.println("using stream forEach");
-			      list.stream().forEach(student -> System.out.println(student));
+//			      //using stream forEach
+//			      Syste.out.println("using stream forEach");
+//			      list.stream().forEach(student -> System.out.println(student));
 	}
 
-	private static void getArrayListCapacity(ArrayList<Object> list) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 }
