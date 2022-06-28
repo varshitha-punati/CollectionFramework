@@ -69,7 +69,7 @@ public class AboutArrayList {
 		For such scenarios ensureCapacity() method of Java.util.ArrayList class is very useful as
 		it increases the size of the ArrayList by a specified capacity.
 		*/
-	      list1.ensureCapacity(40);
+	      list1.ensureCapacity(40);	
 	      
 	      
 	      

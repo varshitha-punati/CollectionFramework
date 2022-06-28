@@ -25,6 +25,7 @@ public class AboutVectorCase {
 		v1.addElement(2);
 		v1.addElement(5);
 		v1.addElement(4);
+		v1.add(5);
 		
 		//printing the values 
 		System.out.println("v1:"+v1);
